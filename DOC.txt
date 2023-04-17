@@ -1,0 +1,64 @@
+Autor          : André Luiz
+Versão         : 1.0
+Linguagem(DEV) : FreeBasic.net
+
+      ===== Funções =====
+##CORES
+color.set         -  Altera a cor atual;
+color.atual.letra -  Pega a cor atual das letras;
+color.atual.fundo -  Pega a cor atual do fundo;
+
+##POSIÇÃO
+pos.x             -  Pega a posição da coluna atual;
+pos.y             -  Pega a posição da linha atual;
+pos.set.x         -  Determinar um nova posição de coluna;
+pos.set.y         -  Determinar um nova posição para linha;
+
+##TEXT
+echo              -  Exibe um texto sem quebrar a linha;
+char              -  Retorn a letra para o código ASCII;
+ascii             -  Retorn o código ASCII para a letra;
+getkey.char       -  Pega apenas um caractere precionado;
+getkey.ascii      -  Pega o código do caractere precionado;
+
+
+      ===== Como usar =====
+>color.set [letra] [fundo]
+ex:  tool.exe color.set 15 7
+
+>color.atual.letra
+ex: tool.exe color.atual.letra
+    echo %errorlevel%
+
+>color.atual.fundo
+ex: tool.exe color.atual.fundo
+    echo %errorlevel%
+
+>pos.x
+ex: tool.exe pos.x
+    echo %errorlevel%
+
+>pos.y
+ex: tool.exe pos.y
+    echo %errorlevel%
+
+>pos.set.x [linha]
+ex: tool.exe pos.set.x 2
+
+>pos.set.y [coluna]
+ex: tool.exe pos.set.y 2
+
+>echo [texto]
+ex:  tool.exe echo Meu "texto"
+
+>char [Código ascii]
+ex: tool.exe char 97
+
+>ascii [letra]
+ex: tool.exe ascii a
+
+>getkey.char
+ex: tool.exe getkey.char
+
+>getkey.ascii
+ex: tool.exe getkey.ascii
